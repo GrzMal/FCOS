@@ -40,4 +40,4 @@ You can do this in two ways:
 
 3. Save the file.
 
-4. In SINGULAR, run the modified cmp.txt file:
+4. In SINGULAR, run the modified `cmp.txt` file:
