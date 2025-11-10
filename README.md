@@ -35,8 +35,8 @@ You can do this in two ways:
 
 2. Open the file **`cmp.txt`** and add the following line **after line 49**:
 
-```singular
-<"classify.txt";
+```singular```
+`<"classify.txt";`
 
 3. Save the file.
 
