@@ -1,19 +1,43 @@
-In order to check computational results in the article: "Construction of free curves by adding osculating conics to a given cubic curve" you need to:
+# Instructions for verifying computational results
 
-1a. Modify one of the core files of SINGULAR. This modification allows user to make field extensions computations, which are not cover by original library. To do so:
+These steps explain how to reproduce the computations from the article:
 
-a) download files: "classify.txt", "cmp.txt"
+**“Construction of free curves by adding osculating conics to a given cubic curve.”**
 
-b) change name of this file to "classify.lib"
+---
 
-c) replace the original file of the same name. The standard path for this file is (...\cygwin64\usr\local\share\singular\LIB)
+## 1. Modify SINGULAR to allow field extension computations
 
-or
+You can do this in two ways:
 
-1b. Modify procedures from "classify.lib" only for current session, by doing the following:
+### **Option A — Replace the original library file**
 
-a) download files: "classify.txt", "cmp.txt"
+1. Download the following files:
+   - `classify.txt`
+   - `cmp.txt`
 
-b) In the file "cmp.txt" add after line 49 the following line ' <"classify.txt"; ' and save the file
+2. Rename the file `classify.txt` to **`classify.lib`**.
 
-2. Run in SINGULAR "cmp.txt" file.
+3. Replace the original file `classify.lib` located in:
+
+(...\cygwin64\usr\local\share\singular\LIB)
+
+
+(or the equivalent SINGULAR library path on your system).
+
+---
+
+### **Option B — Modify the library only for the current session**
+
+1. Download the following files:
+- `classify.txt`
+- `cmp.txt`
+
+2. Open the file **`cmp.txt`** and add the following line **after line 49**:
+
+```singular
+<"classify.txt";
+
+3. Save the file.
+
+4. In SINGULAR, run the modified cmp.txt file:
