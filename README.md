@@ -41,3 +41,10 @@ You can do this in two ways:
 3. Save the file.
 
 4. In SINGULAR, run the modified `cmp.txt` file:
+
+## Reference
+
+If you use this code in your work, please cite the following paper:
+
+A. Dimca, G. Ilardi, G. Malara, P. Pokora
+*Construction of free curves by adding osculating conics to a given cubic curve*
